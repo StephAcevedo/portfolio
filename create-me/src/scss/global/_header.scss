@@ -1,0 +1,96 @@
+@import '../mixins/helpers';
+@import '../mixins/typography';
+@import '../mixins/variables';
+
+nav {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background-color: #530a71;
+    .hamburger {
+        @extend %clear-button-defaults; 
+        position: absolute;
+        top: 15px;
+        right: 30px;
+        cursor: pointer;
+        z-index: 2;
+        @include breakpoint(xs) {
+            .line {
+                width: 30px;
+                height: 3px;
+                margin-bottom: 5px;
+                background-color: $white;  
+            }
+        }
+    }
+    .nav-links {
+        width: 50%;
+        height: 100%;
+        margin-left: auto;
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        @include breakpoint(xs) {
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            background-color: #530a71;
+            flex-direction: column;
+            justify-content: flex-start;
+            z-index: 1;
+            clip-path: circle(100px at 90% -10%);
+            -webkit-clip-path: circle(100px at 90% -10%);
+            transition: all 1s ease-out;
+            &.open {
+                margin-top: 50px;
+                clip-path: circle(700px at 75% -10%);
+                -webkit-clip-path: circle(700px at 75% -10%);
+            }
+        }
+        
+        li {
+            padding: 20px;
+            display: inline-block;
+            text-align: right;
+            font-size: 16px;
+            @include breakpoint(xs) {
+                opacity: 0;
+                transition: all 0.5s ease 0.2s;
+            }
+            a {
+                color: $white;
+                font-weight: 600;
+                &:hover {
+                    color: $white;
+                }
+            }
+            &.fade {
+                @include breakpoint(xs) {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -100;
+}
+
+.banner {
+    position: relative;
+    //background-color: #ced4d3;
+    #element {
+        margin-left: 20px;
+        color: $black;
+        font-size: 32px;
+        opacity: .7;
+        text-align: left;
+    }
+}

@@ -1,0 +1,150 @@
+// mixins
+@import 'typography';
+@import 'variables';
+
+// transition
+@mixin transition($transition...) {
+    -moz-transition:    $transition;
+    -o-transition:      $transition;
+    -webkit-transition: $transition;
+    transition:         $transition;
+}
+@mixin transition-property($property...) {
+    -moz-transition-property:    $property;
+    -o-transition-property:      $property;
+    -webkit-transition-property: $property;
+    transition-property:         $property;
+}
+@mixin transition-duration($duration...) {
+    -moz-transition-property:    $duration;
+    -o-transition-property:      $duration;
+    -webkit-transition-property: $duration;
+    transition-property:         $duration;
+}
+@mixin transition-timing-function($timing...) {
+    -moz-transition-timing-function:    $timing;
+    -o-transition-timing-function:      $timing;
+    -webkit-transition-timing-function: $timing;
+    transition-timing-function:         $timing;
+}
+@mixin transition-delay($delay...) {
+    -moz-transition-delay:    $delay;
+    -o-transition-delay:      $delay;
+    -webkit-transition-delay: $delay;
+    transition-delay:         $delay;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #EDE7EF;
+  }
+  100% {
+    background-color: $mint;
+  }
+}
+
+%clear-button-defaults {
+    background: none;
+    border: none;
+    border-radius: 0;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+%clear-list-defaults {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        &:before {
+            position: inherit;
+            top: inherit;
+            right: inherit;
+            bottom: inherit;
+            left: inherit;
+            background: none;
+            content: none;
+        }
+    }
+}
+// .group:
+// clearfix
+.group, %group {
+   &:after {
+       content: '';
+       display: table;
+       clear: both;
+   }
+}
+
+@function rem($px) {
+    @return ($px / 16)+rem;
+  }
+  @mixin museo-sans($weight: 300, $style: normal) {
+    font-family: "museo-sans", 'MuseoSans500', -apple-system, system-ui, 'Helvetica', 'Arial', sans-serif;
+    font-style: $style;
+    font-weight: $weight;
+  }
+  @mixin museo-slab($weight: 900, $style: normal) {
+    font-family: "museo-slab", 'MuseoSans500', 'Helvetica', 'Arial', sans-serif;
+    font-style: $style;
+    font-weight: $weight;
+  }
+  @mixin museo-display($weight: 900, $style: normal) {
+    font-family: "museo-sans-display", 'MuseoSans500', 'Helvetica', sans-serif;
+    font-style: $style;
+    font-weight: $weight;
+  }
+  @mixin container($width: 1240px) {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $width;
+    @media (max-width: 1260px) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  @mixin breakpoint($point){
+      @if ($point == xl){
+          @media (min-width: 1600px){ @content }
+      }
+      @if ($point == lg){
+          @media (min-width: 1200px){ @content }
+      }
+      @else if ($point == md-max){
+          @media (max-width: 1199px){ @content }
+      }
+      @else if ($point == md-min){
+          @media (min-width: 992px) { @content }
+      }
+      @else if ($point == sm){
+          @media (min-width: 768px) and (max-width: 991px){ @content }
+      }
+      @else if ($point == sm-max){
+          @media (max-width: 991px) { @content }
+      }
+      @else if ($point == sm-min){
+          @media (min-width: 768px) { @content }
+      }
+      @else if ($point == xs){
+          @media (max-width: 767px)  { @content }
+      }
+      @else if ($point == xxs){
+          @media (max-width: 640px) and (min-width: 481px){ @content }
+      }
+      @else if ($point == xxxs){
+          @media  (max-width: 480px){ @content }
+      }
+  }
+
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &::-moz-placeholder           {@content}
+  &:-moz-placeholder           {@content}
+  &:-ms-input-placeholder      {@content}
+}

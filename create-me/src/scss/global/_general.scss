@@ -1,0 +1,26 @@
+@import '../mixins/helpers';
+@import '../mixins/typography';
+@import '../mixins/variables';
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: $white;
+    color: $black;
+    font-family: $font;
+    ul, p, h1, h2, h3, h4, h5, h6 {
+        margin: 0;
+        padding: 0;
+    } 
+
+}
+
+section {
+    position: relative;
+    padding: 265px 150px;
+}

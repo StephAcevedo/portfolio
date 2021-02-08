@@ -1,0 +1,19 @@
+@import '../mixins/helpers';
+@import '../mixins/typography';
+@import '../mixins/variables';
+
+.skills {
+    position: relative;
+    padding: 50px 20px;
+    color: $black;
+    font-size: 16px;
+    text-align: center;
+    h2 {
+        margin-bottom: 30px;
+    }
+    i {
+        display: block;
+        font-size: 6em;
+        padding: 20px;
+    }
+}

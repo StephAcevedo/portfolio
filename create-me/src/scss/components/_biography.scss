@@ -1,0 +1,15 @@
+@import '../mixins/helpers';
+@import '../mixins/typography';
+@import '../mixins/variables';
+
+.biography {
+    padding: 200px 150px;
+    background-color: $gray;
+    color: $white;
+    h2 {
+        margin-bottom: 30px;
+    }
+    img {
+        border-radius: 50%;
+    }
+}

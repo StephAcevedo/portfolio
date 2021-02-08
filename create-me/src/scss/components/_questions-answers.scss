@@ -1,0 +1,43 @@
+@import '../mixins/helpers';
+@import '../mixins/typography';
+@import '../mixins/variables';
+
+.question-and-answer {
+    margin-bottom: 50px;
+    position: relative;
+    .question {
+        margin-bottom: 40px;
+        padding-left: 75px;
+        position: relative;
+        color: $abbey;
+        //font-family: $museo-display;
+        display: block;
+        font-size: 22px;
+        line-height: 28px;
+        &::before {
+            content: "Q:";
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: $sanmarino;
+            font-size: 58px;
+        }
+    }
+    .answer {
+        padding-left: 75px;
+        position: relative;
+        color: $abbey;
+        //font-family: $museo-display; //Need to be changed to MuseoSans-700
+        display: block;
+        font-size: 18px;
+        line-height: 26px;
+        &::before {
+            content: "A:";
+            position: absolute;
+            top: 0;
+            left: 14px;
+            color: $french;
+            font-size: 48px;
+        }
+    }
+}

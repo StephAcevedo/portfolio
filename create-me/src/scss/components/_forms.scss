@@ -1,0 +1,131 @@
+@import '../mixins/helpers';
+@import '../mixins/typography';
+@import '../mixins/variables';
+
+form {
+    label {
+        color: $sanmarino;
+        display: block;
+        //font-family: $museo-display; //Need to be changed to MuseoSans-700
+        font-size: 14px;
+        line-height: 26px;
+        text-transform: uppercase;
+    }
+    input {
+        @include transition(background 255ms);
+        height: auto;
+        margin-bottom: 15px;
+        width: 100%;
+        padding: 6px 15px;
+        color: $abbey;
+        background: $white;
+        border: 1px solid $french;
+        border-radius: 0;
+        box-shadow: none;        
+        font-size: 16px;
+        font-family: $font;
+        max-width: 100%;
+        -webkit-appearance: none !important;        
+        @include placeholder {
+            color:  $french;
+            font-style: italic;            
+        }
+        &:focus {
+            border: 1px solid $french;
+            outline: none;
+        }   
+        &[type="text"], &[type="email"]{
+            width: 50%;
+            @include breakpoint(xs){
+                width: 100%;
+            }
+        }     
+        &[type="checkbox"] {
+            position: absolute;
+            left: -9999em;
+            margin: 0;
+            border-radius: 0;
+            -webkit-appearance: none;
+            &:checked {
+                + label {
+                    &:before {
+                        background-color: $white;
+                        background-size: 16px 12px;
+                        background-position: center center;
+                        color: $sanmarino;
+                        content: "\e013";
+                        font-family: 'Glyphicons Halflings';
+                        line-height: 24px;
+                        text-indent: 5px;
+                    }
+                }
+            }
+
+            + label {
+                height: 20px;
+                margin: 0 0 12px;
+                padding: 0 0 0 40px;
+                position: relative;
+                color: $abbey;
+                display: block;
+                font-size: 16px;
+                //font-family: $museo-display; //Need to be changed to MuseoSans-700
+                line-height: 26px;
+                &:before {
+                    @include transition(background 225ms);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 28px;
+                    width: 28px;
+                    display: block;
+                    background-color: $white;
+                    border: 1px solid $french;
+                    border-radius: 5px;
+                    content: '';
+                }
+            }
+        }
+    }
+    textarea {
+        @include transition(background 255ms);
+        height: auto;
+        min-height: 163px;
+        margin-bottom: 15px;
+        width: 100%;
+        padding: 6px 15px;
+        color: $abbey;
+        background: $white;
+        border: 1px solid $french;
+        border-radius: 0;
+        box-shadow: none;        
+        font-size: 16px;
+        font-family: $font;
+        max-width: 100%;
+        -webkit-appearance: none !important;        
+        @include placeholder {
+            color:  $french;
+            font-style: italic;            
+        }
+        &:focus {
+            border: 1px solid $french;
+            outline: none;
+        } 
+    }
+    button {
+        margin: 30px 0 0;
+        padding: 30px 40px;
+        background-color: $sanmarino;
+        border-radius: 20px;
+        border: none;
+        color: $white;
+        display: block;
+        font-size: 26px;
+        text-align: center;
+    }
+}
+
+.contact {
+    padding: 40px;
+    background: $white;
+}
