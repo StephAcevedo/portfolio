@@ -4,15 +4,19 @@ window.onload = function() {
     color: ['#530a71', '#C4D4DA'],
     connectParticles: true
   });
-
-  $( "section.skills" ).fadeIn( "slow" );
   
   new TypeIt('#element', {
-      strings: ["Hello, I'm Stephanie Acevedo", "I am a Front-end Web Developer."],
+      strings: ["Hello, I'm Stephanie Acevedo", "I am a Front-end Web Developer.", "I love to code, learn and drink matcha."],
       speed: 50,
       breakLines: false,
       autoStart: true
   });
+
+  // logo animation
+  let text = document.querySelector('#steph-acevedo');
+  let circle = document.querySelector('.cls-1');
+  text.classList.add('animate-logo-text');
+  circle.classList.add('animate-cls-1');
 
   // Flyout Nav for mobile
   // Variables

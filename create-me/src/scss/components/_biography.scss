@@ -4,12 +4,23 @@
 
 .biography {
     padding: 200px 150px;
-    background-color: $gray;
-    color: $white;
+    background-color: $lola;
+    color: $wine;
+    @include breakpoint(sm-max){
+        padding: 50px;
+    }
     h2 {
         margin-bottom: 30px;
+        @include breakpoint(sm-max){
+            text-align: center;
+        }
     }
     img {
         border-radius: 50%;
+        @include breakpoint(sm-max){
+            margin: 0 auto;
+            margin-bottom: 15px;
+            display: block;
+        }
     }
 }

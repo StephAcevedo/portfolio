@@ -4,7 +4,7 @@
 
 
 .portfolio {
-    padding: 50px 20px 70px;
+    padding: 60px 20px 70px;
     background-color: $mint;
     .container {
         margin-top: 20px;
@@ -12,15 +12,16 @@
         display: flex;
         justify-content: space-evenly;
         > div {
+            height: auto;
             width: calc(50%/3);
-            height: 60vh;
+            margin: 10px;
             display: flex;
             flex-grow: 1;
             justify-content: center;
             align-items: center;
             transition: all 300ms ease-in-out;
             &:hover {
-                flex-grow: 4;
+                flex-grow: 2;
             }
             > h1 {
                 transform: rotate(-90deg);
@@ -31,18 +32,6 @@
                     color: black;
                 }
             }
-        }
-        .one {
-            background-color: $white;
-        }
-        
-        .two {
-            background-color: $black;
-            color: $white;
-        }
-        
-        .three {
-            background-color: $pink;
         }
     }
     h2 {
@@ -55,7 +44,7 @@
         height: auto;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         &:hover {
-            opacity: .7;
+            opacity: .8;
         }
     }
 }
