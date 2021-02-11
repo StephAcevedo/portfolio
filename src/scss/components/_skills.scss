@@ -1,6 +1,4 @@
-@import '../mixins/helpers';
-@import '../mixins/typography';
-@import '../mixins/variables';
+@import '../global/includes';
 
 .skills {
     position: relative;
@@ -12,11 +10,15 @@
         margin-bottom: 30px;
     }
     .container { 
-        align-items: center;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
+        ul {
+            @extend %clear-list-defaults;
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            list-style: none;
+        }
     }
     img {
         font-size: 6em;

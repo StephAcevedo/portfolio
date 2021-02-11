@@ -1,29 +1,44 @@
-@import '../mixins/helpers';
-@import '../mixins/typography';
-@import '../mixins/variables';
+@import '../global/includes';
 
 .biography {
     padding: 200px 150px;
     background-color: $lola;
     color: $wine;
+    display: flex;
+    flex-wrap: wrap;
     @include breakpoint(sm-max){
         padding: 50px;
     }
-    h2 {
-        margin-bottom: 30px;
+    .image-wrap {
+        width: 25%;
+        margin: auto 0;
+        text-align: center;
         @include breakpoint(sm-max){
-            text-align: center;
+            width: 100%;
+        }
+        img {
+            border-radius: 50%;
+            @include breakpoint(sm-max){
+                margin: 0 auto;
+                margin-bottom: 15px;
+                display: block;
+            }
         }
     }
-    p {
-        font-size: 16px;
-    }
-    img {
-        border-radius: 50%;
+    .blurb {
+        width: 75%;
         @include breakpoint(sm-max){
-            margin: 0 auto;
-            margin-bottom: 15px;
-            display: block;
+            width: 100%;
         }
+        h2 {
+            margin-bottom: 30px;
+            @include breakpoint(sm-max){
+                text-align: center;
+            }
+        }
+        p {
+            font-size: 16px;
+        }
+
     }
 }

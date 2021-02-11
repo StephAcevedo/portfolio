@@ -8,131 +8,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Stephanie Acevedo | Web Developer</title>
     <link rel="shortcut icon" type="image/jpg" href="../src/images/icons8-matcha-tea-100.png"/>
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- fontawesome -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
     <!--particles -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
-        <!--svg devcon -->
+    <!--svg devcon -->
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <!--typeit -->
     <script src="https://cdn.jsdelivr.net/npm//typeit@5.9.0/dist/typeit.min.js"></script>
-    <!-- vue -->
-    
     <!-- stylesheet -->
     <link rel="stylesheet" href="public/css/styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="src/js/global.js"></script>
-    
     <!-- swiper js -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
   </head>
 
 <body >
-    <nav>
-      <div class="logo">
-        <svg xmlns="http://www.w3.org/2000/svg" width="300" height="100%" viewBox="0 0 300 100">
-          <circle class="cls-1" cx="57" cy="50" r="37"></circle>
-          <circle class="cls-2" cx="49" cy="50" r="37"></circle>
-          <text id="steph-acevedo" data-name="Stephanie Acevedo" class="logo-text" x="109.567" y="61.45">Stephanie Acevedo</text>
-        </svg>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="mailto:steph6acevedo@gmail.com">Contact</a></li>
-      </ul>
-      <button class="hamburger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </button>
-    </nav>
+    <header>
+      <nav>
+        <a href="/" class="logo">
+          <svg xmlns="http://www.w3.org/2000/svg" width="300" height="100%" viewBox="0 0 300 100">
+            <circle class="cls-1" cx="57" cy="50" r="37"></circle>
+            <circle class="cls-2" cx="49" cy="50" r="37"></circle>
+            <text id="steph-acevedo" data-name="Stephanie Acevedo" class="logo-text" x="109.567" y="61.45">Stephanie Acevedo</text>
+          </svg>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="mailto:steph6acevedo@gmail.com">Contact</a></li>
+        </ul>
+        <button class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </button>
+      </nav>
+    </header>
+    
     <section class="banner">
       <canvas class="hero-bg"></canvas>
-      <p id="element"></p>
+      <p id="hero-text"></p>
     </section>
     <section class="biography" id="about">
-      <div class="container">
-        <div class="row">
-           <div class="col-sm-12 col-md-3">
-             <img src="src/images/photo.JPG">
-           </div>
-          <div class="col-sm-12 col-md-9">
-            <h2>About Me</h2>
-            <p>I am Front End Web developer with experience of 5 years. My studies in Informtaion Technology with a focus of web development and multi-media communications brought me to where I am now.  Preserving though life with an open mind, constantly learning and contributing good positive energy. I am well versed in Drupal, Wordpress and Joomla. An expertise in HTML, CSS and deep working experience implementing web accessibility. Currently focusing and working on my Javascript/Typescript skills.</p>
-          </div>
-        </div>
+      <div class="image-wrap">
+        <img src="src/images/photo.JPG">
+      </div>
+      <div class="blurb">
+        <h2>About Me</h2>
+        <p>I am Front End Web developer with experience of 5 years. My studies in Information Technology with a focus of web development and multi-media communications brought me to where I am now. Perservering though life with an open mind, constantly learning and contributing good positive energy. I am well versed in Drupal, Wordpress and Joomla. An expertise in HTML, CSS and deep working experience implementing web accessibility. 
+          Currently focusing and working on my Javascript/Typescript skills.
+        </p>
       </div>
     </section>
 
     <!-- Swiper -->
-    <div class="swiper-container">
+    <section class="swiper-container">
       <div class="swiper-wrapper">
         <div class="swiper-slide parallax-bg" style="background-image:url(src/images/Brooklyn-Bridge-Sunset.jpg)" data-swiper-parallax="-23%">
-          <div class="title" data-swiper-parallax="-300">Some of my favorite places on Earth</div>
-          <div class="subtitle" data-swiper-parallax="-200">New York, New York</div>
-          <div class="text" data-swiper-parallax="-100">
-            <p>Born and raised in New York. Although I currently live in Maryland, I often visit back home. When I do, I recharge from the energy the city atmosphere gives. 
-              I love to visit family and friends and explore the city. I enjoy the small shops, authentic restuarants, city walks and even biking from one borough to another. Fashion comes to life in the city. My favorite places to explore are Chelsea, LES, Soho, Hells Kitchen and Brooklyn. The influence of the diverse sociey brings a collective culture that isn't experienced else where, forever grateful.</p>
-          </div>
+          <h2 class="title" data-swiper-parallax="-300">Some of my favorite places on Earth</h2>
+          <h3 class="subtitle" data-swiper-parallax="-200">New York, New York</h3>
+          <p class="text" data-swiper-parallax="-100">
+            Born and raised in New York. Although I currently live in Maryland, I often visit back home. When I do, I recharge from the energy the city atmosphere gives. 
+              I love to visit family and friends and explore the city. I enjoy the small shops, authentic restaurants, city walks and even biking from one borough to another. Fashion comes to life in the city. My favorite places to explore are Chelsea, LES, Soho, Hells Kitchen and Brooklyn. The influence of the diverse society brings a collective culture that isn't experienced else where, forever grateful.
+          </p>
         </div>
         <div class="swiper-slide parallax-bg" style="background-image:url(src/images/japan.jpg)" data-swiper-parallax="-23%">
-          <div class="title" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">Tokyo</div>
-          <div class="subtitle" data-swiper-parallax="-200">Japan</div>
-          <div class="text" data-swiper-parallax="-100">
-            <p>Crisp clean atmosphere, serenity. The people are welcoming and friendly. I'm a foodie type of person, the portions were not enough for me haha but the food was inexpensive and tasty. Every single matcha latte was so delicious(big fan of matcha). 
+          <h2 class="title" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">Tokyo</h2>
+          <h3 class="subtitle" data-swiper-parallax="-200">Japan</h3>
+          <p class="text" data-swiper-parallax="-100">
+            Crisp clean atmosphere, serenity. The people are welcoming and friendly. I'm a foodie type of person, the portions were not enough for me haha but the food was inexpensive and tasty. Every single matcha latte was so delicious(big fan of matcha). 
               The image in this slide was taken while at the teamLab Borderless, a popular, immersive museum known for its colorful, futuristic digital art installations & photo ops.
-            There was a momemnt of stillness and enlightment felt through the visit which brought happy tears.</p>
-          </div>
+            There was a moment of stillness and enlightenment felt through the visit which brought happy tears.
+          </p>
         </div>
         <div class="swiper-slide parallax-bg" style="background-image:url(src/images/london1.jpg)" data-swiper-parallax="-23%">
-          <div class="title" data-swiper-parallax="-300">London</div>
-          <div class="subtitle" data-swiper-parallax="-200">United Kingdom</div>
-          <div class="text" data-swiper-parallax="-100">
-            <p>Probaly not as recognizable but this is the city of London. This view was captured while on the rooftop of an Ikea(Greenwich). 
-              While in London, I explored the city, visited museums, cafes, worked remotely, and enjoyed the public transportation and much more. There was so many plant based food options and beyond flavorful and delicios.
-              I even made friends! London is like a second home to me. When I vistied London for the first time, it was actually my first solo trip. 
-              I learned so much of myself, enjoyed my own company and was freely vulnerable.</p>
-          </div>
+          <h2 class="title" data-swiper-parallax="-300">London</h2>
+          <h3 class="subtitle" data-swiper-parallax="-200">United Kingdom</h3>
+            <p class="text" data-swiper-parallax="-100">Probably not as recognizable but this is the city of London. This view was captured while on the rooftop of an Ikea(Greenwich). 
+              While in London, I explored the city, visited museums, cafes, worked remotely, and enjoyed the public transportation and much more. There was so many plant based food options and beyond flavorful and delicious.
+              I even made friends! London is like a second home to me. When I visited London for the first time, it was actually my first solo trip. 
+              I learned so much of myself, enjoyed my own company and was freely vulnerable.
+            </p>
         </div>
       </div>
       <!-- Add Pagination -->
       <div class="swiper-pagination swiper-pagination-white"></div>
       <!-- Add Navigation -->
-      <div class="swiper-button-prev swiper-button-white"></div>
-      <div class="swiper-button-next swiper-button-white"></div>
-    </div>
+      <button class="swiper-button-prev swiper-button-white"></button>
+      <button class="swiper-button-next swiper-button-white"></button>
+    </section>
 
     <section class="skills" id="skills">
       <h2>Skills</h2>
       <div class="container">
-          <img src="src/images/icons8-html-5-64.png"></a>
-
-          <img src="src/images/icons8-css3-64.png"></a>
-
-          <img src="src/images/icons8-sass-48.png"></a>
-
-          <img src="src/images/icons8-javascript-64.png"></a>
-        
-          <img src="src/images/icons8-web-accessibility-64.png"></a>
-        
-          <img src="src/images/icons8-compare-git-64.png"></a>
-        
-          <img src="src/images/icons8-github-50.png"></a>
-        
-          <img src="src/images/icons8-drupal-48.png"></a>
-        
-          <img src="src/images/icons8-wordpress-64.png"></a>
-
-        </div>
+        <ul>
+          <li><img src="src/images/icons8-html-5-64.png"></li>
+          <li><img src="src/images/icons8-css3-64.png"></li>
+          <li><img src="src/images/icons8-sass-48.png"></li>
+          <li><img src="src/images/icons8-javascript-64.png"></li>
+          <li><img src="src/images/icons8-web-accessibility-64.png"></li>
+          <li><img src="src/images/icons8-compare-git-64.png"></li>
+          <li><img src="src/images/icons8-github-50.png"></li>
+          <li><img src="src/images/icons8-drupal-48.png"></li>
+          <li><img src="src/images/icons8-wordpress-64.png"></li>
+        </ul> 
+      </div>
     </section>
 
     <section class="portfolio" id="portfolio">
@@ -141,22 +126,20 @@
         <div><img src="src/images/slch.png"></div>
         <div><img src="src/images/ctek.png"></div>
         <div><img src="src/images/midwest-ortho.png"></div>
-      </div>
-      <div class="container">
         <div><img src="src/images/Trillium.png"></div>
         <div><img src="src/images/valley-health.png"></div>
         <div><img src="src/images/blessing-health.png"></div>
       </div>
     </section>
-    
+
     <footer>
       <a href="mailto:steph6acevedo@gmail.com" title="Email me" rel="me" target="_blank">steph6acevedo@gmail.com</a>
       <ul class="links">
-        <li><a href="https://github.com/StephAcevedo" title="Steph Acevedo on GitHub" rel="me" target="_blank"><img src="src/images/icons8-github-50.png"></a></li>
+        <li><a href="https://github.com/StephAcevedo" title="Steph Acevedo on GitHub" rel="me" target="_blank"><img src="src/images/icons8-github-50.png"></li>
         <li><a href="https://www.linkedin.com/in/stephanie-acevedo-22b873104/" rel="me" title="Stephanie Acevedo on LinkedIn" target="_blank"><img src="src/images/icons8-linkedin-50.png"></a></li>
       </ul>
       <div class="info">
-          <p>© 2021 Stephanie Acevedo</p>
+          <p>&copy; 2021 Stephanie Acevedo</p>
       </div>
     </footer>
 </body>

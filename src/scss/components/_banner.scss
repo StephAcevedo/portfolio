@@ -1,0 +1,29 @@
+@import '../global/includes';
+
+.banner {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background: url("../../src/images/aesthetic3.jpg") center center / cover no-repeat;
+    display: flex;
+    align-items: center;
+    //background: linear-gradient(rgb(242, 214, 217), rgb(223, 203, 211), rgb(204, 193, 204), rgb(185, 182, 198), rgb(166, 172, 192));
+    //background: linear-gradient(rgb(238, 228, 214), rgb(217, 205, 206), rgb(197, 183, 198), rgb(176, 161, 189), rgb(155, 140, 181));
+    .hero-bg {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+    
+    #hero-text {
+        margin-left: 20px;
+        color: $black;
+        font-size: 32px;
+        opacity: .7;
+        text-align: left;
+        z-index: 2;
+    }
+}

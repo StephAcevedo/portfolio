@@ -34,18 +34,43 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 @import url("https://fonts.googleapis.com/css?family=Merriweather");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Merriweather");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Merriweather");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Merriweather");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Merriweather");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 @keyframes pulse {
   0% {
     background-color: #EDE7EF; }
   100% {
     background-color: #c4d4da; } }
-nav .hamburger {
+.swiper-button-white, nav .hamburger {
   background: none;
   border: none;
   border-radius: 0;
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none; }
+
+.skills .container ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .skills .container ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .skills .container ul li:before {
+      position: inherit;
+      top: inherit;
+      right: inherit;
+      bottom: inherit;
+      left: inherit;
+      background: none;
+      content: none; }
 
 .group:after {
   content: '';
@@ -57,13 +82,87 @@ nav .hamburger {
     background-color: #EDE7EF; }
   100% {
     background-color: #c4d4da; } }
-nav .hamburger {
+.swiper-button-white, nav .hamburger {
   background: none;
   border: none;
   border-radius: 0;
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none; }
+
+.skills .container ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .skills .container ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .skills .container ul li:before {
+      position: inherit;
+      top: inherit;
+      right: inherit;
+      bottom: inherit;
+      left: inherit;
+      background: none;
+      content: none; }
+
+.group:after {
+  content: '';
+  display: table;
+  clear: both; }
+
+.banner {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  background: url("../../src/images/aesthetic3.jpg") center center/cover no-repeat;
+  display: flex;
+  align-items: center; }
+  .banner .hero-bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1; }
+  .banner #hero-text {
+    margin-left: 20px;
+    color: #231f20;
+    font-size: 32px;
+    opacity: .7;
+    text-align: left;
+    z-index: 2; }
+
+@keyframes pulse {
+  0% {
+    background-color: #EDE7EF; }
+  100% {
+    background-color: #c4d4da; } }
+.swiper-button-white, nav .hamburger {
+  background: none;
+  border: none;
+  border-radius: 0;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none; }
+
+.skills .container ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .skills .container ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .skills .container ul li:before {
+      position: inherit;
+      top: inherit;
+      right: inherit;
+      bottom: inherit;
+      left: inherit;
+      background: none;
+      content: none; }
 
 .group:after {
   content: '';
@@ -73,37 +172,68 @@ nav .hamburger {
 .biography {
   padding: 200px 150px;
   background-color: #D8CCD4;
-  color: #50476F; }
+  color: #50476F;
+  display: flex;
+  flex-wrap: wrap; }
   @media (max-width: 991px) {
     .biography {
       padding: 50px; } }
-  .biography h2 {
-    margin-bottom: 30px; }
+  .biography .image-wrap {
+    width: 25%;
+    margin: auto 0;
+    text-align: center; }
     @media (max-width: 991px) {
-      .biography h2 {
-        text-align: center; } }
-  .biography p {
-    font-size: 16px; }
-  .biography img {
-    border-radius: 50%; }
+      .biography .image-wrap {
+        width: 100%; } }
+    .biography .image-wrap img {
+      border-radius: 50%; }
+      @media (max-width: 991px) {
+        .biography .image-wrap img {
+          margin: 0 auto;
+          margin-bottom: 15px;
+          display: block; } }
+  .biography .blurb {
+    width: 75%; }
     @media (max-width: 991px) {
-      .biography img {
-        margin: 0 auto;
-        margin-bottom: 15px;
-        display: block; } }
+      .biography .blurb {
+        width: 100%; } }
+    .biography .blurb h2 {
+      margin-bottom: 30px; }
+      @media (max-width: 991px) {
+        .biography .blurb h2 {
+          text-align: center; } }
+    .biography .blurb p {
+      font-size: 16px; }
 
 @keyframes pulse {
   0% {
     background-color: #EDE7EF; }
   100% {
     background-color: #c4d4da; } }
-nav .hamburger {
+.swiper-button-white, nav .hamburger {
   background: none;
   border: none;
   border-radius: 0;
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none; }
+
+.skills .container ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .skills .container ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .skills .container ul li:before {
+      position: inherit;
+      top: inherit;
+      right: inherit;
+      bottom: inherit;
+      left: inherit;
+      background: none;
+      content: none; }
 
 .group:after {
   content: '';
@@ -247,13 +377,30 @@ form button {
     background-color: #EDE7EF; }
   100% {
     background-color: #c4d4da; } }
-nav .hamburger {
+.swiper-button-white, nav .hamburger {
   background: none;
   border: none;
   border-radius: 0;
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none; }
+
+.skills .container ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .skills .container ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .skills .container ul li:before {
+      position: inherit;
+      top: inherit;
+      right: inherit;
+      bottom: inherit;
+      left: inherit;
+      background: none;
+      content: none; }
 
 .group:after {
   content: '';
@@ -263,15 +410,19 @@ nav .hamburger {
 .portfolio {
   padding: 60px 20px 70px;
   background-color: #c4d4da; }
+  .portfolio h2 {
+    margin-bottom: 30px;
+    text-align: center; }
   .portfolio .container {
     margin-top: 20px;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly; }
     .portfolio .container > div {
       height: auto;
-      width: calc(50%/3);
-      margin: 10px;
+      width: calc(100%/3);
+      padding: 10px;
       display: flex;
       flex-grow: 1;
       justify-content: center;
@@ -286,29 +437,43 @@ nav .hamburger {
           transform: rotate(0deg);
           transform: scale(1.5);
           color: black; }
-  .portfolio h2 {
-    margin-bottom: 30px;
-    text-align: center; }
-  .portfolio img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
-    .portfolio img:hover {
-      opacity: .8; }
+      .portfolio .container > div img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+        .portfolio .container > div img:hover {
+          opacity: .8; }
 
 @keyframes pulse {
   0% {
     background-color: #EDE7EF; }
   100% {
     background-color: #c4d4da; } }
-nav .hamburger {
+.swiper-button-white, nav .hamburger {
   background: none;
   border: none;
   border-radius: 0;
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none; }
+
+.skills .container ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .skills .container ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .skills .container ul li:before {
+      position: inherit;
+      top: inherit;
+      right: inherit;
+      bottom: inherit;
+      left: inherit;
+      background: none;
+      content: none; }
 
 .group:after {
   content: '';
@@ -353,13 +518,30 @@ nav .hamburger {
     background-color: #EDE7EF; }
   100% {
     background-color: #c4d4da; } }
-nav .hamburger {
+.swiper-button-white, nav .hamburger {
   background: none;
   border: none;
   border-radius: 0;
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none; }
+
+.skills .container ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .skills .container ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .skills .container ul li:before {
+      position: inherit;
+      top: inherit;
+      right: inherit;
+      bottom: inherit;
+      left: inherit;
+      background: none;
+      content: none; }
 
 .group:after {
   content: '';
@@ -374,15 +556,51 @@ nav .hamburger {
   text-align: center; }
   .skills h2 {
     margin-bottom: 30px; }
-  .skills .container {
+  .skills .container ul {
     align-items: center;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center; }
+    justify-content: center;
+    list-style: none; }
   .skills img {
     font-size: 6em;
     padding: 20px; }
+
+@keyframes pulse {
+  0% {
+    background-color: #EDE7EF; }
+  100% {
+    background-color: #c4d4da; } }
+.swiper-button-white, nav .hamburger {
+  background: none;
+  border: none;
+  border-radius: 0;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none; }
+
+.skills .container ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .skills .container ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .skills .container ul li:before {
+      position: inherit;
+      top: inherit;
+      right: inherit;
+      bottom: inherit;
+      left: inherit;
+      background: none;
+      content: none; }
+
+.group:after {
+  content: '';
+  display: table;
+  clear: both; }
 
 .swiper-container {
   width: 100%;
@@ -408,9 +626,10 @@ nav .hamburger {
   background-position: center; }
 
 .swiper-slide .title {
-  font-size: 41px;
+  font-size: 35px;
   font-weight: 300; }
 .swiper-slide .subtitle {
+  margin-bottom: 5px;
   font-size: 21px; }
 .swiper-slide .text {
   max-width: 400px;
@@ -423,13 +642,30 @@ nav .hamburger {
     background-color: #EDE7EF; }
   100% {
     background-color: #c4d4da; } }
-nav .hamburger {
+.swiper-button-white, nav .hamburger {
   background: none;
   border: none;
   border-radius: 0;
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none; }
+
+.skills .container ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .skills .container ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .skills .container ul li:before {
+      position: inherit;
+      top: inherit;
+      right: inherit;
+      bottom: inherit;
+      left: inherit;
+      background: none;
+      content: none; }
 
 .group:after {
   content: '';
@@ -460,13 +696,30 @@ footer {
     background-color: #EDE7EF; }
   100% {
     background-color: #c4d4da; } }
-nav .hamburger {
+.swiper-button-white, nav .hamburger {
   background: none;
   border: none;
   border-radius: 0;
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none; }
+
+.skills .container ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .skills .container ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .skills .container ul li:before {
+      position: inherit;
+      top: inherit;
+      right: inherit;
+      bottom: inherit;
+      left: inherit;
+      background: none;
+      content: none; }
 
 .group:after {
   content: '';
@@ -480,29 +733,64 @@ nav .hamburger {
 body {
   width: 100%;
   height: 100%;
+  margin: 0;
   background: #ffffff;
   color: #231f20;
   font-family: "Nunito", sans-serif; }
   body ul, body p, body h1, body h2, body h3, body h4, body h5, body h6 {
     margin: 0;
     padding: 0; }
+  body a {
+    text-decoration: none; }
 
 section {
   position: relative;
   padding: 265px 150px; }
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px; } }
+  @media (max-width: 1199px) {
+    .container {
+      max-width: 970px; } }
+  @media (max-width: 991px) {
+    .container {
+      max-width: 750px; } }
 
 @keyframes pulse {
   0% {
     background-color: #EDE7EF; }
   100% {
     background-color: #c4d4da; } }
-nav .hamburger {
+.swiper-button-white, nav .hamburger {
   background: none;
   border: none;
   border-radius: 0;
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none; }
+
+.skills .container ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .skills .container ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .skills .container ul li:before {
+      position: inherit;
+      top: inherit;
+      right: inherit;
+      bottom: inherit;
+      left: inherit;
+      background: none;
+      content: none; }
 
 .group:after {
   content: '';
@@ -599,29 +887,5 @@ nav {
       @media (max-width: 767px) {
         nav .nav-links li.fade {
           opacity: 1; } }
-
-.banner {
-  width: 100%;
-  min-height: 100vh;
-  position: relative;
-  background: url("../../src/images/aesthetic3.jpg") center center/cover no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start; }
-  .banner .hero-bg {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1; }
-  .banner #element {
-    margin-left: 20px;
-    color: #231f20;
-    font-size: 32px;
-    opacity: .7;
-    text-align: left;
-    z-index: 2; }
 
 /*# sourceMappingURL=styles.css.map */

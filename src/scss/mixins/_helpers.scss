@@ -112,7 +112,7 @@
       @if ($point == xl){
           @media (min-width: 1600px){ @content }
       }
-      @if ($point == lg){
+      @if ($point == lg-min){
           @media (min-width: 1200px){ @content }
       }
       @else if ($point == md-max){

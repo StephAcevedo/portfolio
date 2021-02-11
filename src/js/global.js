@@ -5,7 +5,7 @@ window.onload = function() {
     connectParticles: true
   });
   
-  new TypeIt('#element', {
+  new TypeIt('#hero-text', {
       strings: ["Hello, I'm Stephanie Acevedo", "I am a Front-end Web Developer.", "I love to code, learn and drink matcha."],
       speed: 50,
       breakLines: false,
