@@ -23,14 +23,25 @@ window.onload = function() {
   const hamburger = document.querySelector('.hamburger');
   const navLinks = document.querySelector('.nav-links');
   const links = document.querySelectorAll('.nav-links li');
-
-  // Hamburger, on click, open nav menu list and fade links in.
-  hamburger.addEventListener('click', () =>{
-    navLinks.classList.toggle('open');
+  // Named function for toggling navigation
+  function toggleNav() {
+    navLinks.classList.toggle(`open`);
     links.forEach(link => {
-      link.classList.toggle('fade');
-    });
+      if (navLinks.classList.contains('open')) {
+        link.classList.add('fade');
+      } else {
+        link.classList.remove('fade');
+      }
+    })
+  };
+ 
+  hamburger.addEventListener('click', toggleNav);
+    links.forEach(link => {
+      link.addEventListener('click', toggleNav);
   });
+  
+
+  
 
   // Swiper slider
   const swiper = new Swiper('.swiper-container', {
