@@ -14,6 +14,10 @@ nav {
     .logo {
         display: flex;
         margin: 0 20px; 
+        @include breakpoint(xs) { 
+            display: none;
+        }
+
         svg {
             width: 300px;
             .cls-1 {
