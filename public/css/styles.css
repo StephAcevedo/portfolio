@@ -750,7 +750,8 @@ html[data-theme='dark'] {
 .toggle-container {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  margin-right: 15px; }
   .toggle-container input[type=checkbox] {
     height: 0;
     width: 0;
